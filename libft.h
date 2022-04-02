@@ -6,12 +6,54 @@
 /*   By: iamongeo <marvin@42quebec.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/28 16:20:53 by iamongeo          #+#    #+#             */
-/*   Updated: 2022/03/30 14:12:47 by iamongeo         ###   ########.fr       */
+/*   Updated: 2022/04/01 18:22:16 by iamongeo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
+
+# define BLACK_C	"\033[0;30m"
+# define RED_C		"\033[0;31m"
+# define GREEN_C	"\033[0;32m"
+# define YELLOW_C	"\033[0;33m"
+# define BLUE_C		"\033[0;34m"
+# define PURPLE_C	"\033[0;35m"
+# define CYAN_C		"\033[0;36m"
+# define WHITE_C	"\033[0;37m"
+
+# define BLACK_BC	"\033[1;30m"
+# define RED_BC		"\033[1;31m"
+# define GREEN_BC	"\033[1;32m"
+# define YELLOW_BC	"\033[1;33m"
+# define BLUE_BC	"\033[1;34m"
+# define PURPLE_BC	"\033[1;35m"
+# define CYAN_BC	"\033[1;36m"
+# define WHITE_BC	"\033[1;37m"
+
+# define HEX_BASE_LOWERCASE "0123456789abcdef"
+# define HEX_BASE_UPPERCASE "0123456789ABCDEF"
+
+# define CHAR_MAX 127
+# define CHAR_MIN -128
+# define SHRT_MAX 32767
+# define SHRT_MIN -32768
+# define USHRT_MAX 65535
+# define INT_MAX 2147483647
+# define INT_MIN -2147483648
+# define LONG_MAX 2147483647
+# define LONG_MIN -2147483648
+# define ULONG_MAX 4294967295
+# define LLONG_MAX 9223372036854775807
+# define LLONG_MIN -9223372036854775808
+# define ULLONG_MAX 18446744073709551615
+# define CHAR_LIM_ND 3
+# define SHRT_LIM_ND 5
+# define INT_LIM_ND 10
+# define LONG_LIM_ND 10
+# define ULONG_LIM_ND 10
+# define LLONG_LIM_ND 19
+# define ULLONG_LIM_ND 20
 
 # include <unistd.h>
 # include <stdlib.h>
@@ -65,7 +107,7 @@ char	*ft_strtrim(char const *s1, char const *set);
 char	**ft_split(char const *s, char c);
 char	*ft_itoa(int n);
 
-void	ft_putchar(char c);
+void	ft_putchar(int c);
 void	ft_putstr(char const *s);
 void	ft_putendl(char const *s);
 void	ft_putnbr(int n);

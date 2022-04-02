@@ -1,6 +1,6 @@
 FUNC_NAMES_M = isalpha isdigit isalnum isascii isprint strlen memset bzero memcpy memmove strlcpy strlcat toupper tolower strchr strrchr strncmp memchr memcmp strnstr atoi calloc strlcat substr strjoin strtrim split itoa strmapi striteri putchar_fd putstr_fd putendl_fd putnbr_fd putchar putstr putnbr strdup
 
-FUNC_NAMES_B = lstnew lstadd_front lstadd_back lstsize lstlast lstdelone lstclear lstiter lstmap lstcreate lstprint
+FUNC_NAMES_B = lstnew lstadd_front lstadd_back lstsize lstlast lstdelone lstclear lstiter lstmap lstprint lstcreate
 
 PREF		= ft_
 SUF_M		= .c
@@ -15,30 +15,30 @@ SRCS_B		= ${addsuffix ${SUF_B}, ${SRCS_TEMP_B}}
 OBJS_M		= ${SRCS_M:.c=.o}
 OBJS_B		= ${SRCS_B:.c=.o}
 
-CC		= gcc
+CC			= gcc
 CFLAGS		= -Wall -Wextra -Werror
 
-AR		= ar -rcs
+AR			= ar -rcs
 
-RM		= rm -f
+RM			= rm -f
 
 NAME		= libft.a
 
 .c.o:
-		-${CC} ${CFLAGS} -c $< -o ${<:.c=.o}
+			-${CC} ${CFLAGS} -c $< -o ${<:.c=.o}
 
 ${NAME}:	${OBJS_M}
-		${AR} ${NAME} ${OBJS_M}
+			${AR} ${NAME} ${OBJS_M}
 
 all:		${NAME}
 
 clean:
-		${RM} ${OBJS_M} ${OBJS_B}
+			${RM} ${OBJS_M} ${OBJS_B}
 
 fclean:		clean
-		${RM} ${NAME}
+			${RM} ${NAME}
 
-re:		fclean all
+re:			fclean all
 
 bonus:		${NAME} ${OBJS_B}
-		${AR} ${NAME} ${OBJS_B}
+			${AR} ${NAME} ${OBJS_B}

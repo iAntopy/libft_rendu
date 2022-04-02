@@ -6,7 +6,7 @@
 /*   By: iamongeo <marvin@42quebec.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/28 15:48:41 by iamongeo          #+#    #+#             */
-/*   Updated: 2022/03/28 15:48:42 by iamongeo         ###   ########.fr       */
+/*   Updated: 2022/04/01 21:57:53 by iamongeo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,7 +69,7 @@ int	main(void)
 	return (0);
 }
 */
-
+/*
 // LINKED STRS LIST
 int	main(int argc, char *argv[])
 {
@@ -86,4 +86,4 @@ int	main(int argc, char *argv[])
 	ft_lstprint_str(lst);
 	return (0);
 }
-
+*/

@@ -1,29 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lst_average_bonus.c                             :+:      :+:    :+:   */
+/*   ft_lstcreate_bonus.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: iamongeo <marvin@42quebec.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/28 15:45:56 by iamongeo          #+#    #+#             */
-/*   Updated: 2022/03/28 15:45:57 by iamongeo         ###   ########.fr       */
+/*   Created: 2022/03/28 15:47:39 by iamongeo          #+#    #+#             */
+/*   Updated: 2022/03/28 15:48:24 by iamongeo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_lst_average(t_list *lst)
+t_list	*ft_lstcreate(void *content, size_t size)
 {
-	int	size;
-	int	total;
+	void	*data;
+	t_list	*lst;
 
-	size = 0;
-	total = 0;
-	while (lst)
-	{
-		total += *(int *)(lst->content);
-		size++;
-		lst = lst->next
-	}
-	return (total / size);
+	data = malloc(size);
+	ft_memcpy(data, content, size);
+	lst = ft_lstnew(data);
+	return (lst);
 }
