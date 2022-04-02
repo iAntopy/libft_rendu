@@ -6,7 +6,7 @@
 /*   By: iamongeo <marvin@42quebec.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/28 15:55:00 by iamongeo          #+#    #+#             */
-/*   Updated: 2022/03/28 16:03:17 by iamongeo         ###   ########.fr       */
+/*   Updated: 2022/04/01 20:55:36 by iamongeo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,6 +56,8 @@ char	**ft_split(char const *s, char c)
 	char	**tab;
 	int		wcount;
 
+	if (!s)
+		return (NULL);
 	wcount = word_counter(s, c);
 	tab = malloc(sizeof(char *) * (wcount + 1));
 	if (!tab)

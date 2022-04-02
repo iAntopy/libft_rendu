@@ -6,7 +6,7 @@
 /*   By: iamongeo <marvin@42quebec.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/28 15:55:35 by iamongeo          #+#    #+#             */
-/*   Updated: 2022/03/28 16:00:14 by iamongeo         ###   ########.fr       */
+/*   Updated: 2022/04/01 18:21:19 by iamongeo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,6 @@ size_t	ft_strlcat(char *dest, const char *src, size_t size)
 	*d = '\0';
 	return (dst_len + (s - src));
 }
-
 /*
 int	main(void)
 {

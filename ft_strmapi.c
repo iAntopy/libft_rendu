@@ -6,7 +6,7 @@
 /*   By: iamongeo <marvin@42quebec.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/28 15:53:26 by iamongeo          #+#    #+#             */
-/*   Updated: 2022/03/28 16:02:39 by iamongeo         ###   ########.fr       */
+/*   Updated: 2022/04/01 20:52:35 by iamongeo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	unsigned int	len;
 	unsigned int	i;
 
+	if (!s)
+		return (NULL);
 	len = ft_strlen(s);
 	mstr = (char *)malloc(sizeof(char) * (len + 1));
 	if (!mstr)
