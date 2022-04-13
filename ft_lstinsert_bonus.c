@@ -6,7 +6,7 @@
 /*   By: iamongeo <marvin@42quebec.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/28 15:46:57 by iamongeo          #+#    #+#             */
-/*   Updated: 2022/03/28 15:46:58 by iamongeo         ###   ########.fr       */
+/*   Updated: 2022/04/13 19:10:02 by iamongeo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ int	ft_lstinsert(t_list **lst, unsigned int index, t_list *new)
 		return (0);
 	return (1);
 }
-
+/*
 int	main(int argc, char *argv[])
 {
 	t_list	*lst;
@@ -59,3 +59,4 @@ int	main(int argc, char *argv[])
 	}
 	return (0);
 }
+*/
