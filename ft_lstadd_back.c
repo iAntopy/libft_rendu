@@ -6,7 +6,7 @@
 /*   By: iamongeo <marvin@42quebec.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/28 15:46:11 by iamongeo          #+#    #+#             */
-/*   Updated: 2022/03/28 15:46:12 by iamongeo         ###   ########.fr       */
+/*   Updated: 2022/04/13 18:53:23 by iamongeo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 {
 	t_list	*last;
 
-	if (*lst)
+	if (lst && *lst)
 	{
 		last = ft_lstlast(*lst);
 		last->next = new;

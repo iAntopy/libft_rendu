@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: iamongeo <marvin@42quebec.com>             +#+  +:+       +#+        */
+/*   By: iamongeo <iamongeo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/28 15:54:31 by iamongeo          #+#    #+#             */
-/*   Updated: 2022/04/01 20:49:53 by iamongeo         ###   ########.fr       */
+/*   Updated: 2022/04/11 19:25:59 by iamongeo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ char	*ft_substr(char const *str, unsigned int start, size_t n)
 	if (!str)
 		return (NULL);
 	str_len = ft_strlen(str);
-	if (start > str_len)
+	if ((start > str_len) || (n == 0))
 		return (return_empty_str());
 	str_len -= start;
 	str += start;
