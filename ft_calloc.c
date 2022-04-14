@@ -6,7 +6,7 @@
 /*   By: iamongeo <marvin@42quebec.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/28 15:41:58 by iamongeo          #+#    #+#             */
-/*   Updated: 2022/03/28 15:42:00 by iamongeo         ###   ########.fr       */
+/*   Updated: 2022/04/14 14:37:47 by iamongeo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,14 +24,3 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	ft_memset(ptr, 0, mem_size);
 	return (ptr);
 }
-/*
-int	main(void)
-{
-	char	*buff;
-
-	buff = (char *)calloc(10, sizeof(char));
-	ft_strlcpy(buff, "ass scratcherino !\n", 20);
-	ft_putstr(buff);
-	return (0);
-}
-*/

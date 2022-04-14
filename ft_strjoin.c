@@ -6,7 +6,7 @@
 /*   By: iamongeo <marvin@42quebec.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/28 15:55:28 by iamongeo          #+#    #+#             */
-/*   Updated: 2022/04/01 20:50:32 by iamongeo         ###   ########.fr       */
+/*   Updated: 2022/04/14 15:00:25 by iamongeo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,23 +30,3 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	*j = '\0';
 	return (jstr);
 }
-/*
-int	main(int argc, char *argv[])
-{
-	char	*jstr;
-
-	if (argc > 2)
-	{
-		jstr = ft_strjoin(argv[1], argv[2]);
-		ft_putstr("str1, str2 : ");
-		ft_putstr(argv[1]);
-		ft_putstr(", ");
-		ft_putstr(argv[2]);
-		ft_putstr("\n");
-		ft_putstr("jstr : ");
-		ft_putstr(jstr);
-
-	}
-	return (0);
-}
-*/

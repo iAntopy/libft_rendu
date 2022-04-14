@@ -6,7 +6,7 @@
 /*   By: iamongeo <marvin@42quebec.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/28 15:39:24 by iamongeo          #+#    #+#             */
-/*   Updated: 2022/04/13 17:53:38 by iamongeo         ###   ########.fr       */
+/*   Updated: 2022/04/14 14:37:10 by iamongeo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,19 +44,3 @@ int	ft_atoi(const char *str)
 		return (-1 + (sign == -1));
 	return (sign * nb);
 }
-/*
-#include <stdlib.h>
-int	main(int argc, char *argv[])
-{
-	if (argc > 1)
-	{
-		ft_putstr("ft_atoi : ");
-		ft_putnbr(ft_atoi(argv[1]));
-		ft_putstr("\n");
-		ft_putstr("atoi : ");
-		ft_putnbr(atoi(argv[1]));
-		ft_putstr("\n");
-	}
-	return (0);
-}
-*/
