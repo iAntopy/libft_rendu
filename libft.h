@@ -6,7 +6,7 @@
 /*   By: iamongeo <marvin@42quebec.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/28 16:20:53 by iamongeo          #+#    #+#             */
-/*   Updated: 2022/04/11 18:46:49 by iamongeo         ###   ########.fr       */
+/*   Updated: 2022/04/14 19:00:02 by iamongeo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,7 @@
 # define HEX_BASE_LOWERCASE "0123456789abcdef"
 # define HEX_BASE_UPPERCASE "0123456789ABCDEF"
 
+// homemade limits
 # define CHAR_MAX 127
 # define CHAR_MIN -128
 # define SHRT_MAX 32767
@@ -43,17 +44,11 @@
 # define INT_MIN -2147483648
 # define LONG_MAX 2147483647
 # define LONG_MIN -2147483648
-# define ULONG_MAX 4294967295
-# define LLONG_MAX 9223372036854775807
-# define LLONG_MIN -9223372036854775808
-# define ULLONG_MAX 18446744073709551615
-# define CHAR_LIM_ND 3
-# define SHRT_LIM_ND 5
-# define INT_LIM_ND 10
-# define LONG_LIM_ND 10
-# define ULONG_LIM_ND 10
-# define LLONG_LIM_ND 19
-# define ULLONG_LIM_ND 20
+# define ULONG_MAX 4294967295U
+# define LLONG_MAX 9223372036854775807LL
+# define LLONG_MIN -9223372036854775808LL
+# define ULLONG_MAX 18446744073709551615ULL
+# define SIZE_MAX 18446744073709551615ULL
 
 # include <unistd.h>
 # include <stdlib.h>
