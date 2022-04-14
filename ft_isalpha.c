@@ -1,22 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstadd_front_bonus.c                            :+:      :+:    :+:   */
+/*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: iamongeo <marvin@42quebec.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/28 15:46:21 by iamongeo          #+#    #+#             */
-/*   Updated: 2022/04/13 19:03:00 by iamongeo         ###   ########.fr       */
+/*   Created: 2022/03/28 15:42:15 by iamongeo          #+#    #+#             */
+/*   Updated: 2022/03/28 16:02:13 by iamongeo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_lstadd_front(t_list **lst, t_list *new)
+int	ft_isalpha(int c)
 {
-	if (lst)
-	{
-		new->next = *lst;
-		*lst = new;
-	}
+	return (('a' <= c && c <= 'z') || ('A' <= c && c <= 'Z'));
 }
